@@ -1,4 +1,42 @@
+export const ExamOptions = [
+  
+  {
+    option:"SSC/Dakhil/Equivalent"
+  },
+  {
+    option:"JSC/JDC"
+  },
+  {
+    option:"SSC/Dakhil"
+  },
+  {
+    option:"SSC(Vocational)"
+  },
+  {
+    option:"HSC/Alim"
+  },
+  {
+    option:"HSC(Vocational)"
+  },
+  {
+    option:"HSC(BM)"
+  },
+  {
+    option:"Diploma in Commerce"
+  },
+  {
+    option:"Diploma in Business Studies" 
+  },
+]
+
+
+
 export const Years = [
+  {
+    selected: true,
+    disable: true,
+    year: "Select a year",
+  },
   { year: 2024 },
   { year: 2023 },
   { year: 2022 },
@@ -31,17 +69,22 @@ export const Years = [
 ];
 
 
-export const Boards=[
-  { "value": "Barisal" },
-  {  "value": "Chittagong" },
-  {  "value": "Comilla" },
-  { "value": "Dhaka" },
-  {  "value": "Dinajpur" },
-  {  "value": "Jessore" },
-  {  "value": "Mymensingh" },
-  {  "value": "Rajshahi" },
-  {  "value": "Sylhet" },
-  {  "value": "Madrasah" },
-  { "value": "Technical" },
-  {  "value": "DIBS(Dhaka)" }
-]
+export const Boards = [
+  {
+    selected: true,
+    disable: true,
+    value: "Select a board",
+  },
+  { value: "Barisal" },
+  { value: "Chittagong" },
+  { value: "Comilla" },
+  { value: "Dhaka" },
+  { value: "Dinajpur" },
+  { value: "Jessore" },
+  { value: "Mymensingh" },
+  { value: "Rajshahi" },
+  { value: "Sylhet" },
+  { value: "Madrasah" },
+  { value: "Technical" },
+  { value: "DIBS(Dhaka)" },
+];
