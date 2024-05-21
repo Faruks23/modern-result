@@ -2,7 +2,7 @@ import React from 'react';
 
 const StudentTable = ({ data }:any) => {
   return (
-    <table className="w-[150px] divide-y divide-gray-200 absolute right-5 top-3 z-10">
+    <table className="w-[150px] divide-y divide-gray-200 absolute right-10 top-3 z-10">
       <thead className="bg-gray-50">
         <tr>
           <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
