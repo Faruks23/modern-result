@@ -1,10 +1,29 @@
+"use client"
+
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import ResultForm from '../ResultForm/ResultForm';
+import ResultTable from '../ResultTable/ResultTable';
+
+
+
+// you can use a function to return the target element besides using React refs
+
+
+
 
 const Form = () => {
+  // const targetRef = useRef(null);
+  const [getResult,setGetResult]=useState(true)
+  // const getTargetElement = () => document.getElementById('resultTable');
+
+  // const downloadPDF = async () => {
+  //   await generatePDF(targetRef, { filename: 'result.pdf' })
+  // }
+
   return (
-    <div className='w-[650px] h-[680px] bg-white border  border-gray-200 rounded-md shadow-sm p-2'>
+    <div  className='w-[650px] min-h-[680px] bg-white border  border-gray-200 rounded-md shadow-sm p-2'>
+
       <div className="form-head h-[121px] w-full bg-[rgb(238,238,238)] rounded-md ">
         <div className="head-content flex h-full">
           <div className="logo w-[141px] flex  justify-center items-center h-full">
@@ -27,7 +46,11 @@ const Form = () => {
           </div>
         </div>
       </div>
-      <ResultForm></ResultForm>
+       
+      {getResult ? <ResultTable ></ResultTable>: <ResultForm ></ResultForm>}
+     
+
+
       <div className="form-footer h-[95px] border-t-4 border-[#86c775] px-2 flex justify-between items-center text-[10px] text-[#666666] bg-gray-100 mt-[35px] shadow-sm">
         <p>©2005-2024 Ministry of Education, All rights reserved.</p>
         <div className='flex justify-between items-center gap-4'>
