@@ -14,7 +14,8 @@ import ResultTable from '../ResultTable/ResultTable';
 
 const Form = () => {
   // const targetRef = useRef(null);
-  const [getResult,setGetResult]=useState(true)
+  const [getResult, setGetResult] = useState(false)
+  const [findResult, setFindResult] = useState({})
   // const getTargetElement = () => document.getElementById('resultTable');
 
   // const downloadPDF = async () => {
@@ -47,7 +48,7 @@ const Form = () => {
         </div>
       </div>
        
-      {getResult ? <ResultTable ></ResultTable>: <ResultForm ></ResultForm>}
+      {getResult ? <ResultTable findResult={findResult} ></ResultTable> : <ResultForm setGetResult={setGetResult} setFindResult={setFindResult}  ></ResultForm>}
      
 
 

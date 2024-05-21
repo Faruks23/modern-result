@@ -1,0 +1,418 @@
+[
+
+  {
+    "studentInfo": {
+      "rollNo": "339303",
+      "name": "MD. KAMAL HOSSAIN",
+      "board": "DHAKA",
+      "fathersName": "MD. ABDUR RAHMAN",
+      "group": "SCIENCE",
+      "mothersName": "MST. KHADIJA BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "15-05-2006",
+      "result": "PASSED",
+      "institute": "ABC HIGH SCHOOL",
+      "gpa": 4.0
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "A+" },
+      { "code": "107", "subject": "ENGLISH", "grade": "A+" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "A+" },
+      { "code": "127", "subject": "SCIENCE", "grade": "A+" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "A+" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "A" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "A+"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "A+" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "A+"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "A+" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A+"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "A+" }
+    
+    
+    ]
+
+
+  },
+
+  {
+    "studentInfo": {
+      "rollNo": "339304",
+      "name": "MST. RINA AKTER",
+      "board": "COMILLA",
+      "fathersName": "MD. RAHMAT ALI",
+      "group": "COMMERCE",
+      "mothersName": "MST. RAJIA BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "22-08-2006",
+      "result": "PASSED",
+      "institute": "XYZ HIGH SCHOOL",
+      "gpa": 3.5
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "B+" },
+      { "code": "107", "subject": "ENGLISH", "grade": "B" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "B" },
+      { "code": "127", "subject": "SCIENCE", "grade": "B+" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "B+" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "B" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "B+"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "B+" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "B+"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "B+" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "B+" }
+    ]
+  },
+  {
+    "studentInfo": {
+      "rollNo": "339305",
+      "name": "MD. RAKIB HOSSAIN",
+      "board": "RAJSHAHI",
+      "fathersName": "MD. HASAN ALI",
+      "group": "SCIENCE",
+      "mothersName": "MST. ALIMA BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "30-03-2006",
+      "result": "PASSED",
+      "institute": "LMN HIGH SCHOOL",
+      "gpa": 3.75
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "A-" },
+      { "code": "107", "subject": "ENGLISH", "grade": "B" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "A" },
+      { "code": "127", "subject": "SCIENCE", "grade": "A+" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "A" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "B+" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "B+"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "A" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "A+"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "A+" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A+"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "A" }
+    ]
+  },
+  {
+    "studentInfo": {
+      "rollNo": "339306",
+      "name": "MST. SHILPI AKTER",
+      "board": "SYLHET",
+      "fathersName": "MD. ABDUL KADER",
+      "group": "HUMANITIES",
+      "mothersName": "MST. RAJIYA BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "10-12-2006",
+      "result": "PASSED",
+      "institute": "PQR HIGH SCHOOL",
+      "gpa": 2.9
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "B-" },
+      { "code": "107", "subject": "ENGLISH", "grade": "C" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "C" },
+      { "code": "127", "subject": "SCIENCE", "grade": "B" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "B" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "C" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "B"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "B" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "B"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "B-" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "B" }
+    ]
+  },
+  {
+    "studentInfo": {
+      "rollNo": "339307",
+      "name": "MD. RAFIQUL ISLAM",
+      "board": "DINAJPUR",
+      "fathersName": "MD. ABDUL MALIK",
+      "group": "COMMERCE",
+      "mothersName": "MST. KHADIJA BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "05-07-2007",
+      "result": "PASSED",
+      "institute": "STU HIGH SCHOOL",
+      "gpa": 3.4
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "A-" },
+      { "code": "107", "subject": "ENGLISH", "grade": "B-" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "B" },
+      { "code": "127", "subject": "SCIENCE", "grade": "B+" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "A-" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "B" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "B+"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "A-" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "A-"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "B+" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A+"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "B+" }
+    ]
+  },
+  {
+    "studentInfo": {
+      "rollNo": "339308",
+      "name": "MST. SHAHINA AKTER",
+      "board": "BARISAL",
+      "fathersName": "MD. SHAH ALAM",
+      "group": "SCIENCE",
+      "mothersName": "MST. MARIAM BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "14-01-2006",
+      "result": "PASSED",
+      "institute": "UVW HIGH SCHOOL",
+      "gpa": 3.8
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "A" },
+      { "code": "107", "subject": "ENGLISH", "grade": "A" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "A+" },
+      { "code": "127", "subject": "SCIENCE", "grade": "A+" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "A" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "A-" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "A"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "A+" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "A+"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "A" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A+"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "A" }
+    ]
+  },
+  {
+    "studentInfo": {
+      "rollNo": "339309",
+      "name": "MD. SHOFIQUL ISLAM",
+      "board": "JESSORE",
+      "fathersName": "MD. ABDUR RASHID",
+      "group": "HUMANITIES",
+      "mothersName": "MST. JANNATUN NESA",
+      "type": "REGULAR",
+      "dateOfBirth": "09-09-2007",
+      "result": "PASSED",
+      "institute": "XYZ HIGH SCHOOL",
+      "gpa": 2.85
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "C+" },
+      { "code": "107", "subject": "ENGLISH", "grade": "C" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "C" },
+      { "code": "127", "subject": "SCIENCE", "grade": "B-" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "B-" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "C" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "B"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "B" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "B"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "B-" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "B-" }
+    ]
+  },
+  {
+    "studentInfo": {
+      "rollNo": "339310",
+      "name": "MST. ROKSANA BEGUM",
+      "board": "MADRASAH",
+      "fathersName": "MD. ABDULLAH",
+      "group": "SCIENCE",
+      "mothersName": "MST. FATEMA BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "28-02-2006",
+      "result": "PASSED",
+      "institute": "LMN HIGH SCHOOL",
+      "gpa": 4.2
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "A+" },
+      { "code": "107", "subject": "ENGLISH", "grade": "A+" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "A+" },
+      { "code": "127", "subject": "SCIENCE", "grade": "A+" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "A+" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "A" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "A+"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "A+" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "A+"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "A+" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A+"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "A+" }
+    ]
+  },
+  {
+    "studentInfo": {
+      "rollNo": "339311",
+      "name": "MD. SUMON HOSSAIN",
+      "board": "CHITTAGONG",
+      "fathersName": "MD. ABDUL HAKIM",
+      "group": "COMMERCE",
+      "mothersName": "MST. SALMA BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "07-11-2007",
+      "result": "PASSED",
+      "institute": "XYZ HIGH SCHOOL",
+      "gpa": 3.6
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "A" },
+      { "code": "107", "subject": "ENGLISH", "grade": "B" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "A-" },
+      { "code": "127", "subject": "SCIENCE", "grade": "A" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "A" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "B+" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "A"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "A" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "A"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "A" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A+"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "A" }
+    ]
+  },
+  {
+    "studentInfo": {
+      "rollNo": "339312",
+      "name": "MST. LAILA BEGUM",
+      "board": "DHAKA",
+      "fathersName": "MD. SAIFUL ISLAM",
+      "group": "HUMANITIES",
+      "mothersName": "MST. HALIMA BEGUM",
+      "type": "REGULAR",
+      "dateOfBirth": "12-06-2007",
+      "result": "PASSED",
+      "institute": "ABC HIGH SCHOOL",
+      "gpa": 3.1
+    },
+    "gradeSheet": [
+      { "code": "101", "subject": "BENGALI", "grade": "A-" },
+      { "code": "107", "subject": "ENGLISH", "grade": "B-" },
+      { "code": "109", "subject": "MATHEMATICS", "grade": "B" },
+      { "code": "127", "subject": "SCIENCE", "grade": "B+" },
+      { "code": "111", "subject": "ISLAM AND MORAL EDUCATION", "grade": "A-" },
+      { "code": "110", "subject": "GEOGRAPHY & ENVIRONMENT", "grade": "B" },
+      {
+        "code": "153",
+        "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+        "grade": "B+"
+      },
+      { "code": "140", "subject": "CIVICS AND CITIZENSHIP", "grade": "A-" },
+      {
+        "code": "154",
+        "subject": "INFORMATION AND COMMUNICATION TECHNOLOGY",
+        "grade": "A-"
+      },
+      { "code": "134", "subject": "AGRICULTURE STUDIES", "grade": "B+" },
+      {
+        "code": "147",
+        "subject": "PHYSICAL EDUCATION, HEALTH & SPORTS",
+        "grade": "A+"
+      },
+      { "code": "156", "subject": "CAREER EDUCATION", "grade": "A" }
+    ]
+  }
+]

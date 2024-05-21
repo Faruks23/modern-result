@@ -6,6 +6,30 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { Toaster, toast } from 'sonner';
 
 
+interface StudentInfo {
+  rollNo: string;
+  name: string;
+  board: string;
+  fathersName: string;
+  group: string;
+  mothersName: string;
+  type: string;
+  dateOfBirth: string;
+  result: string;
+  institute: string;
+  gpa: number;
+}
+
+interface Grade {
+  code: string;
+  subject: string;
+  grade: string;
+}
+
+export interface StudentData {
+  studentInfo: StudentInfo;
+  gradeSheet: Grade[];
+}
 
 
 type Inputs = {
@@ -22,12 +46,18 @@ type Inputs = {
 
 
 
-const ResultForm = () => {
+const ResultForm = ({ setGetResult, setFindResult }:any) => {
 
   const { register, handleSubmit, reset, formState: { errors }, } = useForm<Inputs>()
  const [sum1,setSum1]=useState(0)
   const [sum2, setSum2] = useState(0)
-  
+  const [Result, setResult] = useState<StudentData[]>([])
+
+  useEffect(() => {
+    fetch('/Result.json')
+    .then(res=>res.json())
+    .then(result =>setResult(result))
+  },[])
   useEffect(()=>{
     function getRandomNumber1() {
       const min = 1;
@@ -49,10 +79,8 @@ const ResultForm = () => {
   const TotalSum = sum1+sum2
 
   const FormSubmit: SubmitHandler<Inputs> = (data) => {
-
-    console.log(data)
-    const sum = data.sum
-    console.log(TotalSum,sum)
+       console.log(data)
+  
     if (data && data.sum == TotalSum) {
       const promise = new Promise(async (resolve, reject) => {
         try {
@@ -60,20 +88,16 @@ const ResultForm = () => {
           await new Promise((r) => setTimeout(r, 2000));
 
           // Make a POST request to the API
-          const response = await fetch('/api/submit', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ ...data }),
-          });
+           
 
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
+          const result = Result.find(r => r.studentInfo.rollNo==data.roll);
+          console.log(result,'from')
+          if (result) {
+            setFindResult(result)
+            resolve(result);
+            setGetResult(true)
           }
-
-          const result = await response.json();
-          resolve(result);
+          throw new Error('result not found')
 
         } catch (error: any) {
           reject(error.message);
@@ -83,7 +107,7 @@ const ResultForm = () => {
       toast.promise(promise, {
         loading: 'Loading...',
         success: (result: any) => {
-          if (result.success == 'pass') {
+          if (result.studentInfo.result == 'PASSED') {
             return 'congratulation '
           }
           else {
@@ -161,12 +185,12 @@ const ResultForm = () => {
           <label className='text-sm font-bold text-black'>
             :
           </label>
-          <select  {...register("board", { required: true })} name="board" id="" className=' border  py-1 px-2 rounded-md shadow-sm outline-green-700  w-[234px]'>
+          <select  {...register("board", { required: true })} name="board" id="" className=' border uppercase  py-1 px-2 rounded-md shadow-sm outline-green-700  w-[234px]'>
             {
               Boards.map(board => {
                 return (
                   <>
-                    <option key={board.value} selected={board.selected} disabled={board.disable} className=' border rounded-md ' value={board.value}>
+                    <option key={board.value} selected={board.selected} disabled={board.disable} className=' border rounded-md uppercase ' value={board.value}>
                       {board.value}
                     </option>
                   </>

@@ -1,37 +1,35 @@
 // components/ResultTable.js
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 import React from 'react';
+const ResultTable = ({ findResult }:any) => {
+  // const studentInfo = {
+  //   rollNo: "339302",
+  //   name: "MST. SAMIRA AKTER",
+  //   board: "CHITTAGONG",
+  //   fathersName: "MD. ABDUL SAMAD",
+  //   group: "HUMANITIES",
+  //   mothersName: "MST. MANJUARA BEGUM",
+  //   type: "REGULAR",
+  //   dateOfBirth: "26-02-2007",
+  //   result: "PASSED",
+  //   institute: "LEMU CHHARI HIGH SCHOOL",
+  //   gpa: 3.17
+  // };
+  const { studentInfo, gradeSheet }=findResult
 
-const ResultTable = ({ downloadPDF}:any) => {
-  const studentInfo = {
-    rollNo: "339302",
-    name: "MST. SAMIRA AKTER",
-    board: "CHITTAGONG",
-    fathersName: "MD. ABDUL SAMAD",
-    group: "HUMANITIES",
-    mothersName: "MST. MANJUARA BEGUM",
-    type: "REGULAR",
-    dateOfBirth: "26-02-2007",
-    result: "PASSED",
-    institute: "LEMU CHHARI HIGH SCHOOL",
-    gpa: 3.17
-  };
-
-  const gradeSheet = [
-    { code: "101", subject: "BENGALI", grade: "A-" },
-    { code: "107", subject: "ENGLISH", grade: "C" },
-    { code: "109", subject: "MATHEMATICS", grade: "C" },
-    { code: "127", subject: "SCIENCE", grade: "A-" },
-    { code: "111", subject: "ISLAM AND MORAL EDUCATION", grade: "A-" },
-    { code: "110", subject: "GEOGRAPHY & ENVIRONMENT", grade: "C" },
-    { code: "153", subject: "HISTORY OF BANGLADESH AND WORLD CIVILIZATION", grade: "A-" },
-    { code: "140", subject: "CIVICS AND CITIZENSHIP", grade: "A-" },
-    { code: "154", subject: "INFORMATION AND COMMUNICATION TECHNOLOGY", grade: "A-" },
-    { code: "134", subject: "AGRICULTURE STUDIES", grade: "A-" },
-    { code: "147", subject: "PHYSICAL EDUCATION, HEALTH & SPORTS", grade: "A+" },
-    { code: "156", subject: "CAREER EDUCATION", grade: "A" }
-  ];
+  // const gradeSheet = [
+  //   { code: "101", subject: "BENGALI", grade: "A-" },
+  //   { code: "107", subject: "ENGLISH", grade: "C" },
+  //   { code: "109", subject: "MATHEMATICS", grade: "C" },
+  //   { code: "127", subject: "SCIENCE", grade: "A-" },
+  //   { code: "111", subject: "ISLAM AND MORAL EDUCATION", grade: "A-" },
+  //   { code: "110", subject: "GEOGRAPHY & ENVIRONMENT", grade: "C" },
+  //   { code: "153", subject: "HISTORY OF BANGLADESH AND WORLD CIVILIZATION", grade: "A-" },
+  //   { code: "140", subject: "CIVICS AND CITIZENSHIP", grade: "A-" },
+  //   { code: "154", subject: "INFORMATION AND COMMUNICATION TECHNOLOGY", grade: "A-" },
+  //   { code: "134", subject: "AGRICULTURE STUDIES", grade: "A-" },
+  //   { code: "147", subject: "PHYSICAL EDUCATION, HEALTH & SPORTS", grade: "A+" },
+  //   { code: "156", subject: "CAREER EDUCATION", grade: "A" }
+  // ];
 
 
  
@@ -88,7 +86,7 @@ const ResultTable = ({ downloadPDF}:any) => {
             </tr>
           </thead>
           <tbody className='text-[12px] text-black font-normal'>
-            {gradeSheet.map((subject, index) => (
+            {gradeSheet.map((subject:any, index:number) => (
               <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
                 <td className="p-1 border">{subject.code}</td>
                 <td className="p-1 border">{subject.subject}</td>
