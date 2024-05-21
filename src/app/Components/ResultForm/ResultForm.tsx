@@ -8,6 +8,7 @@ import { Toaster, toast } from 'sonner';
 
 interface StudentInfo {
   rollNo: string;
+  regNO:string;
   name: string;
   board: string;
   fathersName: string;
@@ -90,7 +91,8 @@ const ResultForm = ({ setGetResult, setFindResult }:any) => {
           // Make a POST request to the API
            
 
-          const result = Result.find(r => r.studentInfo.rollNo==data.roll);
+          const result = Result.find(item => item.studentInfo.rollNo === data.roll);
+
           console.log(result,'from')
           if (result) {
             setFindResult(result)
@@ -140,7 +142,7 @@ const ResultForm = ({ setGetResult, setFindResult }:any) => {
           <label className='text-sm font-bold text-black'>
             :
           </label>
-          <select  {...register("ExamName", { required: true })} name="ExamName" id="" className=' border  py-1 px-2 rounded-md shadow-sm outline-green-700 w-[234px]'>
+          <select  {...register("ExamName", { required: true })} name="ExamName" id="" className=' border  py-1 px-2 rounded-md shadow-sm outline-green-700 w-[234px] text-[14px]'>
             {
               ExamOptions.map(options => {
                 return (
@@ -163,7 +165,7 @@ const ResultForm = ({ setGetResult, setFindResult }:any) => {
           <label className='text-sm font-bold text-black'>
             :
           </label>
-          <select  {...register("Year", { required: true })} name="Year" id="" className=' border  py-1 px-2 rounded-md shadow-sm outline-green-700  w-[234px]'>
+          <select  {...register("Year", { required: true })} name="Year" id="" className=' border  py-1 px-2 rounded-md shadow-sm outline-green-700  text-[14px] w-[234px]'>
             {
               Years.map(year => {
                 return (
@@ -185,12 +187,12 @@ const ResultForm = ({ setGetResult, setFindResult }:any) => {
           <label className='text-sm font-bold text-black'>
             :
           </label>
-          <select  {...register("board", { required: true })} name="board" id="" className=' border uppercase  py-1 px-2 rounded-md shadow-sm outline-green-700  w-[234px]'>
+          <select  {...register("board", { required: true })} name="board" id="" className=' border   py-1 px-2 rounded-md shadow-sm outline-green-700  w-[234px] text-[14px]'>
             {
               Boards.map(board => {
                 return (
                   <>
-                    <option key={board.value} selected={board.selected} disabled={board.disable} className=' border rounded-md uppercase ' value={board.value}>
+                    <option key={board.value} selected={board.selected} disabled={board.disable} className=' border rounded-md  ' value={board.value}>
                       {board.value}
                     </option>
                   </>
@@ -209,7 +211,7 @@ const ResultForm = ({ setGetResult, setFindResult }:any) => {
           <label className='text-sm font-bold text-black'>
             :
           </label>
-          <input  {...register("roll")} type="text" placeholder='000000' name="roll" id="" className='border  py-1 px-2 rounded-md shadow-sm outline-green-700 w-[234px]' />
+          <input  {...register("roll")} type="number" placeholder='000000' name="roll" id="" className='border  py-1 px-2 rounded-md shadow-sm outline-green-700 w-[234px]' />
         </div>
 
         <div className=' flex justify-between items-center gap-3'>
@@ -219,7 +221,7 @@ const ResultForm = ({ setGetResult, setFindResult }:any) => {
           <label className='text-sm font-bold text-black'>
             :
           </label>
-          <input  {...register("reg", { required: true })} type="text" placeholder='0000000000' name="reg" id="" className='border  py-1 px-2 rounded-md shadow-sm outline-green-700 w-[234px]' />
+          <input  {...register("reg", { required: true })} type="number" placeholder='0000000000' name="reg" id="" className='border  py-1 px-2 rounded-md shadow-sm outline-green-700 w-[234px]' />
 
         </div>
         <div className=' flex justify-between items-center gap-3'>
