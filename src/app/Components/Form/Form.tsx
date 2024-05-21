@@ -30,6 +30,10 @@ const Form = () => {
       .then(res => res.json())
       .then(result => setResult(result))
   }, [])
+  const refreshWindow = () => {
+    // Refresh the window
+    window.location.reload();
+  };
 
   return (
     <>
@@ -63,7 +67,9 @@ const Form = () => {
 
         {getResult ? <ResultTable findResult={findResult} ></ResultTable> : <ResultForm setGetResult={setGetResult} setFindResult={setFindResult}  ></ResultForm>}
 
-            
+        {getResult && <div className="flex justify-center items-center">
+          <button className=' px-2 py-1 border-green-500 border' onClick={refreshWindow}> Search agin</button>
+        </div>}
         
         <div className="form-footer h-[95px] border-t-4 border-[#86c775] px-2 flex justify-between items-center text-[10px] text-[#666666] bg-gray-100 mt-[35px] shadow-sm">
           <p>©2005-2024 Ministry of Education, All rights reserved.</p>

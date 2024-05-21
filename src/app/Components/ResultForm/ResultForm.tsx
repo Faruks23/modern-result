@@ -165,7 +165,7 @@ const ResultForm = ({ setGetResult, setFindResult }:any) => {
           <label className='text-sm font-bold text-black'>
             :
           </label>
-          <select  {...register("Year", { required: true })} name="Year" id="" className=' border  py-1 px-2 rounded-md shadow-sm outline-green-700  text-[14px] w-[234px]'>
+          <select  {...register("Year", { required: true })} required name="Year" id="" className=' border  py-1 px-2 rounded-md shadow-sm outline-green-700  text-[14px] w-[234px]'>
             {
               Years.map(year => {
                 return (

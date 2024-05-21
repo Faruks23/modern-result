@@ -42,37 +42,37 @@ const ResultTable = ({ findResult }:any) => {
           <tbody>
             <tr className='bg-gray-100'>
               <td className="p-1 border  font-medium">Roll No</td>
-              <td className="p-1 border">{studentInfo.rollNo}</td>
+              <td className="p-1 border">{studentInfo?.rollNo}</td>
               <td className="p-1 border  font-medium">Name</td>
-              <td className="p-1 border">{studentInfo.name}</td>
+              <td className="p-1 border">{studentInfo?.name}</td>
             </tr>
             <tr>
               <td className="p-1 border  font-medium">Board</td>
-              <td className="p-1 border">{studentInfo.board}</td>
+              <td className="p-1 border">{studentInfo?.board}</td>
               <td className="p-1 borderfont-medium">Father's Name</td>
-              <td className="p-1 border">{studentInfo.fathersName}</td>
+              <td className="p-1 border">{studentInfo?.fathersName}</td>
             </tr>
             <tr className='bg-gray-100'>
               <td className="p-1 border  font-medium">Group</td>
-              <td className="p-1 border">{studentInfo.group}</td>
+              <td className="p-1 border">{studentInfo?.group}</td>
               <td className="p-1 border  font-medium">Mother's Name</td>
-              <td className="p-1 border">{studentInfo.mothersName}</td>
+              <td className="p-1 border">{studentInfo?.mothersName}</td>
             </tr>
             <tr>
               <td className="p-1 border  font-medium">Type</td>
-              <td className="p-1 border">{studentInfo.type}</td>
+              <td className="p-1 border">{studentInfo?.type}</td>
               <td className="p-1 border  font-medium">Date of Birth</td>
-              <td className="p-1 border">{studentInfo.dateOfBirth}</td>
+              <td className="p-1 border">{studentInfo?.dateOfBirth}</td>
             </tr>
             <tr className='bg-gray-100'>
               <td className="p-1 border  font-medium">Result</td>
-              <td className="p-1 border font-bold text-green-600">{studentInfo.result}</td>
+              <td className="p-1 border font-bold text-green-600">{studentInfo?.result}</td>
               <td className="p-1 border  font-medium">Institute</td>
-              <td className="p-1 border">{studentInfo.institute}</td>
+              <td className="p-1 border">{studentInfo?.institute}</td>
             </tr>
             <tr>
               <td className="p-1 border  font-medium">GPA</td>
-              <td className="p-1 border font-bold" colSpan={3}>{studentInfo.gpa}</td>
+              <td className="p-1 border font-bold" colSpan={3}>{studentInfo?.gpa}</td>
             </tr>
           </tbody>
         </table>
@@ -86,11 +86,11 @@ const ResultTable = ({ findResult }:any) => {
             </tr>
           </thead>
           <tbody className='text-[12px] text-black font-normal'>
-            {gradeSheet.map((subject:any, index:number) => (
+            {gradeSheet?.map((subject:any, index:number) => (
               <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
-                <td className="p-1 border">{subject.code}</td>
-                <td className="p-1 border">{subject.subject}</td>
-                <td className="p-1 border">{subject.grade}</td>
+                <td className="p-1 border">{subject?.code}</td>
+                <td className="p-1 border">{subject?.subject}</td>
+                <td className="p-1 border">{subject?.grade}</td>
               </tr>
             ))}
           </tbody>
