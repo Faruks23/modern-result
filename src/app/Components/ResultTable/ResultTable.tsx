@@ -40,38 +40,38 @@ const ResultTable = ({ findResult }:any) => {
         <h2 className="text-center text-xl font-bold p-4">SSC/Dakhil/Equivalent Result 2023</h2>
         <table className="w-full border-collapse  text-[12px] text-black font-normal">
           <tbody>
-            <tr>
-              <td className="p-1 border bg-gray-100 font-medium">Roll No</td>
+            <tr className='bg-gray-100'>
+              <td className="p-1 border  font-medium">Roll No</td>
               <td className="p-1 border">{studentInfo.rollNo}</td>
-              <td className="p-1 border bg-gray-100 font-medium">Name</td>
+              <td className="p-1 border  font-medium">Name</td>
               <td className="p-1 border">{studentInfo.name}</td>
             </tr>
             <tr>
-              <td className="p-1 border bg-gray-100 font-medium">Board</td>
+              <td className="p-1 border  font-medium">Board</td>
               <td className="p-1 border">{studentInfo.board}</td>
-              <td className="p-1 border bg-gray-100 font-medium">Father's Name</td>
+              <td className="p-1 borderfont-medium">Father's Name</td>
               <td className="p-1 border">{studentInfo.fathersName}</td>
             </tr>
-            <tr>
-              <td className="p-1 border bg-gray-100 font-medium">Group</td>
+            <tr className='bg-gray-100'>
+              <td className="p-1 border  font-medium">Group</td>
               <td className="p-1 border">{studentInfo.group}</td>
-              <td className="p-1 border bg-gray-100 font-medium">Mother's Name</td>
+              <td className="p-1 border  font-medium">Mother's Name</td>
               <td className="p-1 border">{studentInfo.mothersName}</td>
             </tr>
             <tr>
-              <td className="p-1 border bg-gray-100 font-medium">Type</td>
+              <td className="p-1 border  font-medium">Type</td>
               <td className="p-1 border">{studentInfo.type}</td>
-              <td className="p-1 border bg-gray-100 font-medium">Date of Birth</td>
+              <td className="p-1 border  font-medium">Date of Birth</td>
               <td className="p-1 border">{studentInfo.dateOfBirth}</td>
             </tr>
-            <tr>
-              <td className="p-1 border bg-gray-100 font-medium">Result</td>
+            <tr className='bg-gray-100'>
+              <td className="p-1 border  font-medium">Result</td>
               <td className="p-1 border font-bold text-green-600">{studentInfo.result}</td>
-              <td className="p-1 border bg-gray-100 font-medium">Institute</td>
+              <td className="p-1 border  font-medium">Institute</td>
               <td className="p-1 border">{studentInfo.institute}</td>
             </tr>
             <tr>
-              <td className="p-1 border bg-gray-100 font-medium">GPA</td>
+              <td className="p-1 border  font-medium">GPA</td>
               <td className="p-1 border font-bold" colSpan={3}>{studentInfo.gpa}</td>
             </tr>
           </tbody>

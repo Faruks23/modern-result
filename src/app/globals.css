@@ -5,7 +5,8 @@
 body{
   background-color: #EEEEEE;
   font-family: Verdana, Arial, Helvetica, sans-serif; 
-  width: 1440px;
+  width: 1000px;
+  margin: 0 auto;
   
 }
 
